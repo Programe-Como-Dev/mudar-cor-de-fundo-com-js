@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mudar cor de fundo com botão</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      button {
+        padding: 20px 40px;
+        margin: 10px;
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      #btn-azul {
+        background-color: blue;
+        color: white;
+      }
+
+      #btn-amarelo {
+        background-color: yellow;
+        color: black;
+      }
+
+      #btn-vermelho {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn-azul">Azul</button>
+    <button id="btn-amarelo">Amarelo</button>
+    <button id="btn-vermelho">Vermelho</button>
+
+    <script>
+      document
+        .getElementById("btn-azul")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "blue";
+        });
+
+      document
+        .getElementById("btn-amarelo")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "yellow";
+        });
+
+      document
+        .getElementById("btn-vermelho")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "red";
+        });
+    </script>
+  </body>
+</html>
